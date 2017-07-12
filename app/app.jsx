@@ -4,6 +4,7 @@ var ReactDOM = require('react-dom');
 // Greeter React component -- container component
 
 var {Route, Router, IndexRoute, hashHistory} = require('react-router');
+var ToDoApp = require('ToDoApp');
 
 // load foundations-sites
 $(document).foundation();
@@ -11,6 +12,6 @@ $(document).foundation();
 require('style!css!sass!ApplicationStyles');
 
 ReactDOM.render(
-  <p>Boilerplate 3 projects</p>,
+  <ToDoApp/>,
   document.getElementById('app')
 );
