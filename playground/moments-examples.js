@@ -2,11 +2,11 @@ var moment = require('moment');
 
 var now = moment();
 
-console.log(now.format());
+var timeStampe= now.unix();
 
-console.log(moment().unix());
-//1501230236
-var timestamp = 1501230236;
-var currentNow = moment().unix(timestamp);
+console.log(timeStampe);
+//1501668794
 
-console.log("Current timestamp --> ",  moment().unix(timestamp));
+var currentMoment = moment.unix(1501668794);
+
+console.log(currentMoment.format('MMMM Do YYYY h mm A'));

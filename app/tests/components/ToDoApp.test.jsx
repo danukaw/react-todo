@@ -23,6 +23,8 @@ describe('ToDoApp', () => {
 
     expect(todoApp.state.todolist[0].task).toBe(newTodoText);
 
+    // Expect createdAt to be number
+
   });
 
   it('should completed toggle completed when handletoggle called', () => {
@@ -42,9 +44,7 @@ describe('ToDoApp', () => {
     todoApp.handleOnToggle(33);
     // Verify that value change
     expect(todoApp.state.todolist[0].completed).toBe(true);
-
-
-
+    //expect completedAt to be a number
   });
-
+    // Test that when toggle from true to false, completed
 });
