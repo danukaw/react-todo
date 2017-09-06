@@ -22,7 +22,7 @@ var ToDoApp = React.createClass({
       TodoAPI.setTodos(this.state.todolist);
   },
 
-  handleOnSetTodo : function (text) {
+/*  handleOnSetTodo : function (text) {
     this.setState({
       todolist : [
         ...this.state.todolist,
@@ -52,6 +52,7 @@ var ToDoApp = React.createClass({
       todolist : updatedTodos
     });
   },
+*/
 
   handleOnSearch : function (searchText, completedTodos) {
 
@@ -76,7 +77,7 @@ var ToDoApp = React.createClass({
             <div className="column small-centered small-11 medium-6 large-5" >
               <div className="container">
                 <ToDoSearch onSearch={this.handleOnSearch}/>
-                <ToDoList todos={filteredTods} onToggle={this.handleOnToggle}/>
+                <ToDoList todos={filteredTods}/>
                 <AddTodo onSetTodo={this.handleOnSetTodo}/>
               </div>
             </div>
